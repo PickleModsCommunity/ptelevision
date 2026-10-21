@@ -59,11 +59,18 @@ end
 
 function VideoMenu()
     lib.hideMenu()
-    local input = lib.inputDialog('Video Player', {'URL:'})
-    if input then 
+    local input = lib.inputDialog('Video Player', {
+        { type = 'input', label = 'Video URL' },
+        { type = 'checkbox', label = 'Loop Video' },
+        { type = 'checkbox', label = 'Show Video Controls' }
+    })
+
+    if input then
         TriggerServerEvent("ptelevision:event", CURRENT_SCREEN, "ptv_status", {
             type = "play",
-            url = input[1]
+            url = input[1],
+            loop = input[2],
+            showControls = input[3]
         })
     end
     Citizen.Wait(300) 
@@ -185,7 +192,7 @@ RegisterNetEvent("ptelevision:event", function(data, index, key, value)
         if (index) then 
             local event = value
             if (event.type == "play") then 
-                local data = { url = event.url }
+                local data = { url = event.url, loop = event.loop, showControls = event.showControls }
                 if (event.channel) then
                     data = Channels[event.channel]
                     data.channel = event.channel
