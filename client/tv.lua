@@ -1,4 +1,4 @@
-TelevisionsLocal = {}
+local TelevisionsLocal = {}
 
 function SetChannel(index)
     TriggerServerEvent("ptelevision:event", CURRENT_SCREEN, "ptv_status", {
@@ -20,8 +20,8 @@ function GetChannelList()
         channel = status.channel
     end
     for index,value in pairs(Channels) do 
-        table.insert(channel_list, {index = index, url = value.url})
-        table.insert(menu_list, "Channel #" .. index .. " (".. value.name ..")")
+        channel_list[#channel_list+1] = {index = index, url = value.url}
+        menu_list[#menu_list+1] = "Channel #" .. index .. " (".. value.name ..")"
         if channel ~= nil and channel == index then 
             current = #channel_list
         end
@@ -94,10 +94,6 @@ function OpenTVMenu()
             if (selected == 3) then 
                 SetChannel(ChannelList.list[scrollIndex].index)
             end
-        end,
-        onSelected = function(selected, scrollIndex, args) 
-        end,
-        onClose = function(keyPressed)
         end,
         options = {
             {label = 'Videos', description = 'Play a video or stream on the screen.'},
@@ -219,8 +215,8 @@ end)
 
 RegisterCommand('tv', function()
     OpenTVMenu() 
-end)
+end, false)
 
-RegisterCommand("broadcast", function(source, args, raw)
+RegisterCommand('broadcast', function()
     BroadcastMenu()
-end)
+end, false)

@@ -37,20 +37,9 @@ local height = 720
 local sfHandle = nil
 local txdHasBeenSet = false
 
-
-function loadScaleform(scaleform)
-    local scaleformHandle = RequestScaleformMovie(scaleform)
-
-    while not HasScaleformMovieLoaded(scaleformHandle) do 
-        scaleformHandle = RequestScaleformMovie(scaleform)
-        Citizen.Wait(0) 
-    end
-    return scaleformHandle
-end
-
 function ShowScreen(data)
     CURRENT_SCREEN = data
-    sfHandle = loadScaleform(sfName)
+    sfHandle = lib.requestScaleformMovie(sfName)
     runtimeTxd = 'ptelevision_b_dict'
 
     local txd = CreateRuntimeTxd('ptelevision_b_dict')
@@ -105,7 +94,7 @@ function ShowScreen(data)
             SetVolume(coords, modelData.DefaultVolume)
         end
         while duiObj do 
-            local pcoords = GetEntityCoords(PlayerPedId())
+            local pcoords = GetEntityCoords(cache.ped)
             local dist = #(coords - pcoords)
             SendDuiMessage(duiObj, json.encode({
                 setVolume = true,
@@ -129,7 +118,7 @@ end
 function GetClosestScreen()
     local objPool = GetGamePool('CObject')
     local closest = {dist = -1}
-    local pcoords = GetEntityCoords(PlayerPedId())
+    local pcoords = GetEntityCoords(cache.ped)
     for i=1, #objPool do
         local entity = objPool[i]
         local model = GetEntityModel(entity)
@@ -165,9 +154,9 @@ Citizen.CreateThread(function()
         local wait = 2500
         for i=1, #Locations do 
             local data = Locations[i]
-            local dist = #(GetEntityCoords(PlayerPedId()) - v3(data.Position)) 
+            local dist = #(GetEntityCoords(cache.ped) - v3(data.Position)) 
             if not Locations[i].obj and dist < 20.0 then 
-                LoadModel(data.Model)
+                lib.requestModel(data.Model)
                 Locations[i].obj = CreateObject(data.Model, data.Position.x, data.Position.y, data.Position.z)
                 SetEntityHeading(Locations[i].obj, data.Position.w)
                 FreezeEntityPosition(Locations[i].obj, true)
@@ -207,11 +196,9 @@ RegisterNetEvent("ptelevision:requestSync", function(coords, data)
     end
 end)
 
-
-
-RegisterNUICallback("pageLoaded", function(cb)
+RegisterNUICallback("pageLoaded", function(data, cb)
     waitForLoad = false
-    if cb then cb() end
+    cb(1)
 end)
 
 AddEventHandler('onResourceStop', function(name)

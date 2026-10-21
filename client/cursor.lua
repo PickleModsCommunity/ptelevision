@@ -1,7 +1,7 @@
 local scale = 1.5
 local screenWidth = math.floor(1920 / scale)
 local screenHeight = math.floor(1080 / scale)
-shouldDraw = false
+local shouldDraw = false
 
 function SetInteractScreen(bool)
     if (not shouldDraw and bool) then 
@@ -19,7 +19,7 @@ function SetInteractScreen(bool)
             local minY, maxY = ((h - (h / 2)) / 2), (h - (h / 4))
             local totalY = minY - maxY
             
-            RequestTextureDictionary('fib_pc')
+            lib.requestStreamedTextureDict('fib_pc')
             
             -- Update controls while active
             while shouldDraw do
@@ -27,7 +27,7 @@ function SetInteractScreen(bool)
                 nY = GetControlNormal(0, 240) * screenHeight
                 DisableControlAction(0, 1, true) -- Disable looking horizontally
                 DisableControlAction(0, 2, true) -- Disable looking vertically
-                DisablePlayerFiring(PlayerPedId(), true) -- Disable weapon firing
+                DisablePlayerFiring(cache.ped, true) -- Disable weapon firing
                 DisableControlAction(0, 142, true) -- Disable aiming
                 DisableControlAction(0, 106, true) -- Disable in-game mouse controls
                 -- Update mouse position when changed
