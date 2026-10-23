@@ -1,0 +1,170 @@
+# Pickle License
+**Version 1.0 - October 23, 2026**
+
+Copyright © 2026 Pickle Mods & Pickle Mods Community Official Maintainers.
+
+Published and maintained by the **Official Maintainers of the Pickle Mods Community**.
+
+## 1. Definitions
+
+For purposes of this License:
+
+**"Software"** means the source code, scripts, resources, configuration files, documentation, and other copyrightable materials distributed under this License.
+
+**"Licensor"** means the copyright holder or holders who authorize distribution of the Software under this License.
+
+**"You"** means any individual or legal entity exercising rights under this License.
+
+**"Modified Work"** means a work based on the Software that contains copyrightable portions of the Software or adaptations of those portions.
+
+**"Redistribution"** means providing copies of the Software or a Modified Work to another party, whether publicly or privately.
+
+**"Commercial Server"** means a game server operated for commercial purposes, including servers receiving donations, subscriptions, or revenue from in-game purchases.
+
+**"Prohibited Resale"** means offering, licensing, sublicensing, or distributing the Software or a Modified Work in exchange for money, cryptocurrency, credits, or other consideration, where the Software or Modified Work itself is part of what the customer purchases.
+
+## 2. Grant of License
+
+Subject to compliance with this License, the Licensor grants You a worldwide, royalty-free, non-exclusive, non-transferable copyright license to:
+
+1. Use and execute the Software for personal or commercial purposes.
+2. Install and operate the Software on private, public, or commercial game servers.
+3. Study, inspect, modify, and adapt the Software.
+4. Reproduce and redistribute the Software without charging for copies.
+5. Redistribute Modified Works without charging for copies, subject to Section 4.
+6. Provide paid installation, configuration, maintenance, support, and custom development services involving the Software, subject to Section 3.
+
+No trademark rights, patent license, or ownership rights are granted by this License.
+
+## 3. Commercial Use and Resale Restrictions
+
+### 3.1 Permitted Commercial Activities
+
+You may:
+
+- Operate a monetized FiveM server using the Software.
+- Receive donations, subscriptions, or other permitted server revenue.
+- Charge for installing, configuring, maintaining, troubleshooting, or supporting the Software.
+- Charge for independently developed integrations or custom functionality, provided that such charges do not constitute Prohibited Resale.
+- Provide paid server-development services that incorporate the Software, provided that the Software itself remains available to the customer under this License without a separate charge.
+
+All commercial activities must comply with applicable laws and relevant platform terms, including applicable Cfx.re and Rockstar Games policies.
+
+### 3.2 Prohibited Commercial Activities
+
+Without separate written authorization from the Licensor, You may not:
+
+1. Sell, rent, lease, or otherwise commercially distribute copies of the Software.
+2. Sell Modified Works containing copyrightable portions of the Software.
+3. Include the Software or a Modified Work in a paid script pack, resource bundle, subscription, or marketplace product.
+4. Charge a fee for access to, downloading, receiving, or obtaining copies of the Software or Modified Works.
+5. Rebrand or republish the Software as a proprietary product for sale.
+6. Circumvent these restrictions by describing a sale as a donation, service fee, membership, or other transaction when the payment is effectively required to obtain the Software or Modified Work.
+
+These restrictions apply regardless of the marketplace, payment processor, distribution method, or extent of modification.
+
+### 3.3 Legitimate Services
+
+Charging for genuine labor, including installation, configuration, support, troubleshooting, and independently developed customization, is permitted.
+
+A service provider may deliver a configured installation or Modified Work to a customer as part of a genuine service engagement, provided that:
+
+- The customer receives the applicable source code and license notices.
+- The customer may exercise the rights granted under this License without additional licensing fees.
+- The service fee is for genuine labor or independently developed services, not disguised payment for a copy of the Software.
+- The provider does not impose additional restrictions inconsistent with this License.
+
+## 4. Redistribution and Copyleft
+
+You may redistribute the Software or Modified Works, provided that You comply with all of the following conditions:
+
+1. Include a complete, unmodified copy of this License.
+2. Preserve existing copyright notices and attribution to the original authors.
+3. Clearly identify modifications You have made.
+4. License the entire Modified Work under the same version of the Pickle License.
+5. Provide the complete corresponding source code of the Modified Work to each recipient, without additional charge.
+6. Do not impose additional legal or technical restrictions that prevent recipients from exercising the rights granted under this License.
+
+For purposes of this section, complete corresponding source code includes the human-readable source files and reasonably necessary build or installation instructions, excluding independent third-party dependencies available separately.
+
+Merely running the Software on a server, without distributing copies or a Modified Work, does not trigger a requirement to publish source code.
+
+A separate program that merely communicates with the Software through ordinary interfaces does not automatically become a Modified Work solely because of that communication.
+
+## 5. Attribution and Notices
+
+You must preserve all existing copyright notices, license notices, and reasonable attribution included with the Software.
+
+You may not falsely claim to be the original author or copyright holder of the Software.
+
+You may identify the Software as originating from the Pickle Mods Community, but You may not imply official endorsement, sponsorship, or affiliation without authorization.
+
+## 6. Third-Party Materials
+
+This License applies only to materials that the Licensor has the authority to license.
+
+Third-party software, libraries, assets, and dependencies remain subject to their respective licenses.
+
+Nothing in this License grants rights to intellectual property belonging to Cfx.re, Rockstar Games, Take-Two Interactive, or other third parties.
+
+If a conflict exists between this License and a third-party license governing separately included material, the applicable rights and obligations for that material are determined by its own license.
+
+## 7. Termination and Reinstatement
+
+The rights granted under this License automatically terminate if You violate its conditions.
+
+If You cease all violations and remedy their consequences within 30 days after receiving written notice from the Licensor, Your rights are reinstated, unless the Licensor has already initiated legal proceedings concerning a deliberate or repeated violation.
+
+If the Licensor does not provide written notice of a violation, Your rights may be reinstated provisionally when You cease the violation and remedy its consequences, subject to subsequent enforcement.
+
+Termination does not automatically terminate licenses validly received by downstream recipients who remain in compliance with this License.
+
+Termination does not waive any claims or remedies arising from earlier violations.
+
+## 8. Copyright Enforcement
+
+Unauthorized reproduction, modification, distribution, or commercialization outside the permissions granted by this License may constitute copyright infringement.
+
+The Licensor reserves the right to pursue available remedies under applicable law, including:
+
+- Demands to cease infringing activity.
+- Copyright infringement notices and platform takedown requests.
+- Injunctive relief.
+- Recovery of damages and other monetary relief where legally available.
+- Recovery of attorney's fees and litigation costs where authorized by law.
+
+Nothing in this License establishes an automatic financial penalty or guarantees recovery of any particular amount.
+
+Enforcement may be undertaken only by parties with the necessary legal rights or authority.
+
+## 9. Disclaimer of Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR AND CONTRIBUTORS SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE, EXCEPT WHERE SUCH LIMITATION IS PROHIBITED BY LAW.
+
+## 10. No Obligation to Provide Support
+
+The Licensor is not obligated to provide technical support, maintenance, updates, security patches, or continued availability of the Software.
+
+Any support commitments must be established through a separate agreement.
+
+## 11. Separate Commercial Licensing
+
+The Licensor may grant separate written permissions allowing activities otherwise prohibited under this License, including commercial resale or proprietary redistribution.
+
+Such permissions apply only to the parties and materials expressly identified in the separate agreement.
+
+No contributor or community member may grant exceptions on behalf of another copyright holder without appropriate authorization.
+
+## 12. Severability
+
+If any provision of this License is held unenforceable, the remaining provisions shall continue in effect to the extent permitted by applicable law.
+
+An unenforceable provision shall not be interpreted to expand the rights granted beyond those permitted by applicable law.
+
+## 13. Entire License
+
+This License constitutes the copyright permissions and conditions applicable to the Software, except where a separate written agreement authorized by the relevant copyright holder provides otherwise.
+
+No waiver of any provision shall be effective unless made in writing by an authorized party.
